@@ -4,7 +4,8 @@
   "description": "Opinionated micro front-end that can be used to start a one-page site. ",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "watch": "postcss css/tailwind.css -o public/build/tailwind.css --watch"
   },
   "repository": {
     "type": "git",
