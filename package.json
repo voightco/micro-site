@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/dandevri/micro-site/issues"
   },
-  "homepage": "https://github.com/dandevri/micro-site#readme"
+  "homepage": "https://github.com/dandevri/micro-site#readme",
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "postcss": "^7.0.17",
+    "tailwindcss": "^1.1.1"
+  }
 }
