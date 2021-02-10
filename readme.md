@@ -1,4 +1,4 @@
-![Microsite GitHub Banner](docs/banner.jpg)
+![Microsite GitHub Banner](/assets/banner.jpg)
 
 Opinionated micro front-end that can be used to _create a one-pager_.  Great for landing pages or sign-up pages. It uses the static site generator [Eleventy (11ty)][11ty] under the hood and sets _common 11ty defaults_.
 
@@ -11,6 +11,11 @@ Opinionated micro front-end that can be used to _create a one-pager_.  Great for
 * Includes a `assets folder` for static files (images, fonts etc.)
 
 > This is a _*skeleton project_ so it doesn't include any components or basic styling. It's a _*bring your own_ front-end.
+
+## Usage
+
+1. Update the `metadata.json` file with your own site details
+2. Edit the `index.njk` file and start coding your website!
 
 
 ## Install
@@ -53,11 +58,6 @@ micro-site/
 ├── index.njk/            // landing page
 └── .eleventy.js          // 11ty configurations
 ```
-
-## Usage
-
-1. Update the `metadata.json` file with your own site details
-2. Edit the `index.njk` file and start coding your website!
 ## License
 
 [MIT][license] © [Danny de Vries][author]
