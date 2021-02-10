@@ -1,4 +1,5 @@
 {
-  "title": "Micro-site",
-  "description": "Opinionated micro front-end that can be used to start a one-page site."
+  "title": "microsite",
+  "description": "Opinionated micro front-end that can be used to start a one-page site.",
+  "favicon": "/assets/icon.png"
 }

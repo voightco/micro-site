@@ -4,5 +4,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 98vh;
+  background-color: white;
+  background-image: radial-gradient(rgb(189, 189, 189) 1px, white 1px);
+  background-size: 20px 20px;
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 100;
+  margin-top: 0;
+}
+
+img {
+  width: 2em;
+  vertical-align: middle;
 }

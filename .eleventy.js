@@ -7,6 +7,8 @@ module.exports = function(config) {
     return new CleanCSS({}).minify(code).styles;
   });
 
+  config.addPassthroughCopy("assets");
+
   config.addNunjucksAsyncFilter("jsmin", async function (
     code,
     callback
