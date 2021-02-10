@@ -13,6 +13,12 @@
   </style>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <h1>Micro-site</h1>
+  {% set js %}
+    {% include "script.js" %}
+  {% endset %}
+  <script>
+    {{ js | jsmin | safe }}
+  </script>
 </body>
 </html>
