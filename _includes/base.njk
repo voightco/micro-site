@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ metadata.description }}">
+    <meta property="og:locale" content="{{ metadata.lang }}">
+    <meta property="og:site_name" content="{{ metadata.author }}">
+    <meta property="og:title" content="{{ metadata.title }}">
+    <meta property="og:url" content="{{ metadata.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{ metadata.description }}">
+    <meta property="og:image:url" content="{{ metadata.url }}{{ metadata.share }}">
+    <meta property="og:image" content="{{ metadata.url }}{{ metadata.share }}">
+    <meta name="twitter:title" content="{{ metadata.title }}">
+    <meta name="twitter:url" content="{{ metadata.url }}">
+    <meta name="twitter:description" content="{{ metadata.description }}">
+    <meta name="twitter:image" content="{{ metadata.url }}{{ metadata.share }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@{{ metadata.social }}">
+    <meta name="twitter:dnt" content="on">
     <title>{{ metadata.title }}</title>
     <link rel="icon" type="image/png" href="{{ metadata.favicon }}">
+    <link rel="dns-prefetch" href="{{ metadata.url }}">
+    <link rel="preconnect" href="{{ metadata.url }}">
+    <link rel="me" href="{{ metadata.url }}" type="text/html">
+    <link rel="me" href="mailto:{{ metadata.mail }}">
     {% set css %}
       {% include "style.css" %}
     {% endset %}
