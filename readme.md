@@ -4,11 +4,11 @@ Opinionated micro front-end that can be used to _create a one-pager_.  Great for
 
 ## Features ✨
 
-* Inlines and minifies CSS using `clean-css`
-* Inlines and minifies JavaScript using `terser`
-* Includes a `metadata.json` global data file
-* Includes a `base.njk` layout template
-* Includes a `assets folder` for static files (images, fonts etc.)
+* Inlines and minifies CSS using [`clean-css`][css]
+* Inlines and minifies JavaScript using [`terser`][terser]
+* Includes a `metadata.json` [global data file][data]
+* Includes a `base.njk` [layout template][layout]
+* Includes a `assets folder` for [static files][copy] (images, fonts etc.)
 
 > This is a _*skeleton project_ so it doesn't include any components or basic styling. It's a _*bring your own_ front-end.
 
@@ -16,6 +16,7 @@ Opinionated micro front-end that can be used to _create a one-pager_.  Great for
 
 1. Update the `metadata.json` file with your own site details
 2. Edit the `index.njk` file and start coding your website!
+3. _Optional:_ [Deploy the site][deploy] to Netlify.
 
 
 ## Install
@@ -58,15 +59,23 @@ micro-site/
 ├── index.njk/            // landing page
 └── .eleventy.js          // 11ty configurations
 ```
+
+## Roadmap
+
+- [ ] Image optimization with `eleventy-image`
+- [ ] Asset caching with `eleventy-cache-assets`
+- [ ] Syntax highlighting support with `eleventy-plugin-syntaxhiglight`
 ## License
 
 [MIT][license] © [Danny de Vries][author]
 
 [11ty]: https://www.11ty.io/]
-[postcss]: https://postcss.org/
 [nunjucks]: https://mozilla.github.io/nunjucks/
-[autoprefixer]: https://github.com/postcss/autoprefixer
+[deploy]: https://app.netlify.com/start/deploy?repository=https://github.com/voightco/micro-site
+[css]: https://github.com/jakubpawlowicz/clean-css
+[terser]: https://github.com/terser/terser
+[data]: https://www.11ty.dev/docs/data/
+[layout]: https://www.11ty.dev/docs/layouts/
+[copy]: https://www.11ty.dev/docs/copy/
 [author]: https://github.com/dandevri
 [license]: license
-
-[tailwind]: https://tailwindcss.com/
