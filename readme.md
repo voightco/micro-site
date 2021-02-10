@@ -4,7 +4,8 @@ Opinionated micro front-end that can be used to start a one-page site. It's buil
 
 ## Features ✨
 
-* Uses [`11ty`][11ty] as a static site generator which compiles [`nunjucks`][nunjucks] templates
+* Inlines and minifies CSS using `clean-css`
+* Inlines and minifies JavaScript using `terser`
 
 
 ## Install

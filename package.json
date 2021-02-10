@@ -1,0 +1,25 @@
+{
+  "name": "micro-site",
+  "version": "1.0.0",
+  "description": "Opinionated micro front-end that can be used to start a one-page site.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --dryrun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voightco/micro-site.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voightco/micro-site/issues"
+  },
+  "homepage": "https://github.com/voightco/micro-site#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "clean-css": "^4.2.3"
+  }
+}
