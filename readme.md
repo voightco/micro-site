@@ -6,6 +6,11 @@ Opinionated micro front-end that can be used to start a one-page site. It's buil
 
 * Inlines and minifies CSS using `clean-css`
 * Inlines and minifies JavaScript using `terser`
+* Includes a `metadata.json` global data file
+* Includes a `base.njk` base template
+* Includes a `passtrough copy file` for static files
+
+> This is 
 
 
 ## Install
@@ -25,6 +30,21 @@ npm run dev
 
 to start the live-reloadzz on a local development server.
 
+## Project Structure
+
+```
+micro-site/
+├── _site/                // output folder of 11ty
+├── _includes/
+│   ├── style.css         // minified and inlined
+│   ├── script.js         // minified and inlined
+│   └── base.njk          // base layout
+└── .eleventy.js          // 11ty configurations
+```
+
+## Usage
+
+1. Update the `metadata.json` file with your own site details
 ## License
 
 [MIT][license] © [Danny de Vries][author]

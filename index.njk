@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  {% set css %}
-    {% include "style.css" %}
-  {% endset %}
-  <style>
-    {{ css | cssmin | safe }}
-  </style>
-</head>
-<body>
-  <h1>Micro-site</h1>
-  {% set js %}
-    {% include "script.js" %}
-  {% endset %}
-  <script>
-    {{ js | jsmin | safe }}
-  </script>
-</body>
-</html>
+---
+layout: base.njk
+---
+
+<h1>Micro-site</h1>
+<p><em>Edit the <code>index.njk</code> file and get going!</em></p>
