@@ -21,6 +21,6 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "clean-css": "^4.2.3",
-    "terser": "^5.6.0-beta"
+    "terser": "^5.14.2"
   }
 }
